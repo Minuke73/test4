@@ -143,10 +143,10 @@ lib.ssMetadata = [];
 					cjs.MovieClip.prototype.play.call(this);
 					this.ignorePause = false;
 				}
-				else if(deltaFrame >= 2){
+				else if(deltaFrame >= 1){
 					this.gotoAndPlayForStreamSoundSync(this.getDesiredFrame(this.currentFrame,calculatedDesiredFrame));
 				}
-				else if(deltaFrame <= -2){
+				else if(deltaFrame <= -1){
 					cjs.MovieClip.prototype.stop.call(this);
 					this.ignorePause = true;
 				}
